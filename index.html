@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sojourners Investment — everyday groceries, fresh produce and pantry favourites for your home.">
+  <title>Sojourners Investment | Good food, good living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="announcement"><span>✦</span> Fresh essentials, fair prices, every day <span class="announcement-right">Open today 7:00 AM – 8:00 PM</span></div>
+    <nav class="nav container">
+      <a href="#" class="brand" aria-label="Sojourners Investment home">
+        <span class="brand-mark">S<span>i</span></span>
+        <span><strong>Sojourners</strong><small>INVESTMENT</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#story">Our story</a>
+        <a href="founder.html">Founder</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="search-button" aria-label="Search products">⌕ <span>Search</span></button>
+        <button class="cart-button" id="cartButton" aria-label="Open shopping basket">Basket <b class="cart-count">0</b></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Your everyday market</p>
+        <h1>Good food.<br><em>Good living.</em></h1>
+        <p class="hero-text">From the first cup of tea to the last shared snack, we bring the essentials that make home feel like home.</p>
+        <a class="button button-dark" href="#shop">Shop our favourites <span>↗</span></a>
+        <div class="hero-note"><span class="note-icon">✳</span><span><strong>Picked with care</strong><br>Quality goods for every table.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-sticker">Fresh<br><span>every day</span></div>
+        <div class="hero-caption"><span>01</span><i></i><span>OUR MARKET</span></div>
+      </div>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Browse the shelves</p><h2>What are you<br><em>looking for?</em></h2></div>
+          <a href="#shop" class="text-link">View all products <span>→</span></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card card-green" href="#shop" data-filter="Staples"><span class="category-icon">◒</span><h3>Staples</h3><span class="category-arrow">↗</span></a>
+          <a class="category-card card-orange" href="#shop" data-filter="Drinks & fresh"><span class="category-icon">◌</span><h3>Drinks &<br>fresh</h3><span class="category-arrow">↗</span></a>
+          <a class="category-card card-blue" href="#shop" data-filter="Snacks"><span class="category-icon">◍</span><h3>Snacks</h3><span class="category-arrow">↗</span></a>
+          <a class="category-card card-cream" href="#shop" data-filter="Household essentials"><span class="category-icon">✳</span><h3>Household<br>essentials</h3><span class="category-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section container" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">The good stuff</p><h2>Customer <em>favourites</em></h2></div>
+        <div class="filter-row" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Staples">Staples</button>
+          <button class="filter" data-filter="Drinks & fresh">Drinks & fresh</button>
+          <button class="filter" data-filter="Snacks">Snacks</button>
+          <button class="filter" data-filter="Household essentials">Household</button>
+        </div>
+      </div>
+      <div class="products-grid">
+        <article class="product-card" data-category="Staples" data-name="Red kidney beans" data-price="420">
+          <div class="product-image image-beans"><span class="product-tag">Kitchen staple</span><button class="quick-add" aria-label="Add red kidney beans to basket">+</button></div>
+          <div class="product-info"><div><h3>Red kidney beans</h3><p>Staples · 2 kg</p></div><strong>KSh 420</strong></div>
+        </article>
+        <article class="product-card" data-category="Staples" data-name="Smoked omena / dry fish" data-price="650">
+          <div class="product-image image-fish"><span class="product-tag">Local favourite</span><button class="quick-add" aria-label="Add omena dry fish to basket">+</button></div>
+          <div class="product-info"><div><h3>Smoked / dry fish</h3><p>Staples · 500 g</p></div><strong>KSh 700</strong></div>
+        </article>
+        <article class="product-card" data-category="Staples" data-name="Ugali flour (maize)" data-price="320">
+          <div class="product-image image-ugali"><span class="product-tag">Household must-have</span><button class="quick-add" aria-label="Add ugali flour to basket">+</button></div>
+          <div class="product-info"><div><h3>Ugali (maize flour)</h3><p>Staples · 1kg</p></div><strong>KSh 90</strong></div>
+        </article>
+        <article class="product-card" data-category="Drinks & fresh" data-name="Fresh local milk" data-price="180">
+          <div class="product-image image-milk"><span class="product-tag">Fresh daily</span><button class="quick-add" aria-label="Add fresh local milk to basket">+</button></div>
+          <div class="product-info"><div><h3>Fresh local milk</h3><p>Drinks & fresh · 1 litre</p></div><strong>KSh 100</strong></div>
+        </article>
+        <article class="product-card" data-category="Snacks" data-name="Traditional sweets" data-price="220">
+          <div class="product-image image-sweets"><span class="product-tag">Sweet treats</span><button class="quick-add" aria-label="Add traditional sweets to basket">+</button></div>
+          <div class="product-info"><div><h3> sweets</h3><p>Snacks · package</p></div><strong>KSh 80</strong></div>
+        </article>
+        <article class="product-card" data-category="Staples" data-name="Wheat flour" data-price="260">
+          <div class="product-image image-wheat-flour"><span class="product-tag">Baking essential</span><button class="quick-add" aria-label="Add wheat flour to basket">+</button></div>
+          <div class="product-info"><div><h3>Wheat flour</h3><p>Staples · 1 kg</p></div><strong>KSh 90</strong></div>
+        </article>
+        <article class="product-card" data-category="Drinks & fresh" data-name="Fresh fruits" data-price="350">
+          <div class="product-image image-fruits"><span class="product-tag">Fresh market pick</span><button class="quick-add" aria-label="Add fresh fruits to basket">+</button></div>
+          <div class="product-info"><div><h3>Fresh fruits</h3><p>Drinks & fresh · 1 kg</p></div><strong>KSh 350</strong></div>
+        </article>
+        <article class="product-card" data-category="Drinks & fresh" data-name="Fruit drink" data-price="120">
+          <div class="product-image image-drink"><span class="product-tag">Chilled today</span><button class="quick-add" aria-label="Add fruit drink to basket">+</button></div>
+          <div class="product-info"><div><h3>Soft drinks</h3><p>Drinks & fresh · 500 ml</p></div><strong>KSh 50</strong></div>
+        </article>
+        <article class="product-card" data-category="Snacks" data-name="Tea biscuits" data-price="180">
+          <div class="product-image image-biscuits"><span class="product-tag">Tea-time favourite</span><button class="quick-add" aria-label="Add tea biscuits to basket">+</button></div>
+          <div class="product-info"><div><h3>Tea biscuits</h3><p>Snacks · 400 g</p></div><strong>KSh 180</strong></div>
+        </article>
+        <article class="product-card" data-category="Household essentials" data-name="Laundry detergent" data-price="390">
+          <div class="product-image image-detergent"><span class="product-tag">Home essential</span><button class="quick-add" aria-label="Add laundry detergent to basket">+</button></div>
+          <div class="product-info"><div><h3>Laundry detergent</h3><p>Household essentials · 1 kg</p></div><strong>KSh 390</strong></div>
+        </article>
+        <article class="product-card" data-category="Household essentials" data-name="Cooking oil" data-price="300">
+          <div class="product-image image-oil"><span class="product-tag">Everyday use</span><button class="quick-add" aria-label="Add cooking oil to basket">+</button></div>
+          <div class="product-info"><div><h3>Cooking oil</h3><p>Household essentials · 1 litre</p></div><strong>KSh 540</strong></div>
+        </article>
+      </div>
+      <div class="shop-footer"><p>Can’t find what you need? <strong>Come in and ask us.</strong></p><a class="button button-outline" href="#contact">Get in touch <span>↗</span></a></div>
+    </section>
+
+    <section class="story container" id="story">
+      <div class="story-photo"></div>
+      <div class="story-copy"><p class="eyebrow">More than a shop</p><h2>Rooted in<br><em>community.</em></h2>      <p>Sojourners Investment started with a simple belief: everyone deserves access to good, honest food. We’re proud to be your neighbourhood stop for the things you need and the flavours you love.</p><a class="text-link" href="founder.html">Meet the founder <span>→</span></a></div>    </section>
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-inner"><div><p class="eyebrow">Stay in the loop</p><h2>Good things are<br><em>coming your way.</em></h2></div><div class="signup-form"><label for="email">Get fresh updates, offers and market news.</label><form><div class="input-wrap"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">→</button></div><small class="form-message"></small></form><p><a class="button button-dark" href="https://wa.me/254180705982" target="_blank" rel="noopener" aria-label="Chat with Sojourners Investment on WhatsApp">WhatsApp us <span>↗</span></a> <a class="button button-outline" href="mailto:sojournersinvestment@gmail.com" aria-label="Email Sojourners Investment">Email us <span>↗</span></a></p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a href="#" class="brand brand-footer"><span class="brand-mark">S<span>I</span></span><span><strong>Sojourners</strong><small>INVESTMENT</small></span></a><p class="footer-muted">Everyday essentials, thoughtfully chosen.</p></div><div><h4>Visit us</h4><p>Kakuma 4 Zone one, Turkana county<br>Sun – Fri · 7:00 AM – 10:00 PM</p></div><div><h4>Say hello</h4><p><a href="mailto:sojournersinvestment@gmail.com">sojournersinvestment@gmail.com</a><br><a href="https://wa.me/254180705982" target="_blank" rel="noopener" aria-label="Chat with Sojourners Investment on WhatsApp">WhatsApp: +254180705982</a></p></div><div><h4>Follow along</h4><p><a href="#">Instagram</a> · <a href="#">Facebook</a></p></div></div><div class="container copyright">© 2025 Sojourners Investment <span>Nursing Lives igniting purpose.</span></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping basket">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your basket</p>  
+        <h3>Shopping list</h3>
+      </div>
+      <button class="cart-close" id="cartClose" aria-label="Close basket">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">No items yet. Add your market essentials.</p>
+    </div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">KSh 0</strong></div>
+      <button class="button button-dark cart-checkout" type="button">Proceed to checkout</button>
+    </div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite">Added to your basket <span>✓</span></div>
+  <script src="so.js"></script>
+</body>
+</html>
